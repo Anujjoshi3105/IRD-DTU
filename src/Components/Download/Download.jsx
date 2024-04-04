@@ -17,7 +17,7 @@ const Download = () => {
     },
   ];
   return (
-    <div className="bg-gray-100 max-w-7xl md:w-3/5 mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+    <div className="bg-gray-50 lg:w-3/5 mx-auto p-10 rounded-xl">
       <Table data={data} />
     </div>
   );

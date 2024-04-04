@@ -1,30 +1,61 @@
 import React from "react";
+
+import { Tabs } from "flowbite-react";
+import { HiAdjustments, HiClipboardList, HiUserCircle } from "react-icons/hi";
+import { MdDashboard } from "react-icons/md";
+
 const About = () => {
   return (
-    <div className="bg-gray-100 max-w-7xl md:w-3/5 mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+    <div className="bg-gray-50 lg:w-3/5 mx-auto p-10 rounded-xl">
       {/* START CONTAINER */}
-
-      <h1 className="text-3xl font-bold py-2">About</h1>
-
-      <a
-        href="#"
-        className="flex flex-col items-center bg-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100">
-        <img
-          className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-          src="anil.jpg"
-          alt=""
-        />
-        <div className="flex flex-col justify-between p-4 leading-normal">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-black ">
-            Professor Anil Kumar Sahu
-          </h5>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-        </div>
-      </a>
-
+      <div className="pb-8">
+        <h1 className="lg:text-2xl text-xl font-bold pb-2">INTRODUCTION</h1>
+        <p>
+          Sponsored research and Industrial consultancy projects are an
+          essential means of enhancing institution-industry interaction and
+          faculty development. By supporting the Govt, PSU and the industry, the
+          University intends to contribute towards the country’s economic growth
+          and serve the society. Therefore, as a matter of policy, the
+          University encourages its faculty members to undertake scientific and
+          technical research/collaboration and consultancy work with outside
+          agencies.
+        </p>
+      </div>
+      <div>
+        <h1 className="lg:text-2xl text-xl font-bold pb-2">OBJECTIVES</h1>
+        <p>
+          The objectives of promoting University consultancy and sponsored
+          research project in the University shall be as given below:
+        </p>
+        <ul className="list-disc pl-5 p-2">
+          <li>
+            The primary objective of undertaking any sponsored research projects
+            and consultancy works shall be creation of new knowledge, widening
+            and expansion of existing knowledge and experience of faculty and
+            staff members.
+          </li>
+          <li>
+            All types of sponsored research projects and consultancy works
+            irrespective of value of the project shall be acceptable so long as
+            there is a distinct value addition to the faculty and staff. The
+            work must be challenging and must involve niche areas of expertise
+            available in the University
+          </li>
+          <li>
+            The research and consultancy works which are likely to bring repute
+            to the University and increase the number of patents in favour of
+            the faculty and the University will be given the top priority.
+          </li>
+          <li>
+            All University consultancy and sponsored research projects in
+            support/partnership of National and International agencies, Govt,
+            PSUs, or Industries engaged in development of major infrastructure
+            and/or in economic development shall be considered subject to the
+            academic and administrative restrictions laid down by the
+            University.
+          </li>
+        </ul>
+      </div>
       {/* END CONTAINER */}
     </div>
   );

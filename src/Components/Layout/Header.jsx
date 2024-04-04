@@ -52,7 +52,7 @@ function Header() {
       {/* HEADER TOP END */}
 
       {/* HEADER BOTTOM START */}
-      <nav className="flex bg-black border-gray-400 text-white w-full border-b-4 justify-end  px-5 md:px-10">
+      <nav className="flex bg-black border-gray-400 text-white w-full border-b-4 justify-end px-2 md:px-10">
         <div
           className={`w-full md:block md:w-auto ${isOpen ? "" : "hidden"}`}
           id="navbar-default">

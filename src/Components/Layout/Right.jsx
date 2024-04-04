@@ -40,22 +40,33 @@ const Right = () => {
       url: "/sponsored-projects",
     },
     { text: "Research Projects - 21/02/2024", url: "/research-projects" },
+    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
+    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
+    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
+    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
+    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
+    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
+    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
+    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
   ];
   return (
-    <div className="lg:w-1/4 flex flex-col lg:px-10 my-10">
+    <div className="lg:w-1/4 px-5  lg:m-0 mt-5">
       <LatestNews newsItems={newItems} />
-      <CommonList
-        heading="Projects & Consultancies"
-        visible={projectListVisible}
-        toggleList={toggleProjects}
-        links={projectListItems}
-      />
-      <CommonList
-        heading="General Information"
-        visible={generalListVisible}
-        toggleList={toggleGeneral}
-        links={generalListItems}
-      />
+
+      <div className="flex lg:flex-col justify-evenly hover:overflow-auto gap-16 lg:gap-0 overflow-hidden">
+        <CommonList
+          heading="MoU/Agreement"
+          visible={projectListVisible}
+          toggleList={toggleProjects}
+          links={projectListItems}
+        />
+        <CommonList
+          heading="Circulars"
+          visible={generalListVisible}
+          toggleList={toggleGeneral}
+          links={generalListItems}
+        />
+      </div>
     </div>
   );
 };

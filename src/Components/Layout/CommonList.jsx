@@ -9,7 +9,7 @@ const CommonList = ({ heading, links }) => {
   };
 
   return (
-    <div className="lg:py-2 border-b-2">
+    <div className="lg:py-2 lg:border-b-2">
       <p className="font-bold lg:text-lg text-nowrap" onClick={toggleList}>
         {heading}{" "}
         <i
@@ -17,10 +17,7 @@ const CommonList = ({ heading, links }) => {
             listVisible ? "fa-angle-up" : "fa-angle-down"
           } cursor-pointer font-semibold hover:text-gray-400`}></i>
       </p>
-      <ul
-        className={`lg:px-5 list-disc ${
-          listVisible ? "" : "hidden"
-        } lg:text-base text-sm`}>
+      <ul className={`px-5 list-disc ${listVisible ? "" : "hidden"} text-sm`}>
         {links.map((link, index) => (
           <li key={index} className="hover:text-gray-500 hover:font-semibold">
             <NavLink to={link.url}>{link.text}</NavLink>

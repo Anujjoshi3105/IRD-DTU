@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <div className="lg:flex p-8 text-wrap justify-center">
+      <div className="lg:flex p-8 text-wrap">
         <Left />
         <Outlet />
         <Right />
