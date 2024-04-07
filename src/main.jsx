@@ -2,9 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
-import Notice from "./Components/Notice/Notice";
 import Contact from "./Components/Contact/Contact";
 import Download from "./Components/Download/Download";
+import Young from "./Components/Faculty/Young";
+import Webinar from "./Components/Webinar/Webinar";
 import Layout from "./Components/Layout/Layout";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
@@ -22,16 +23,20 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "notice",
-        element: <Notice />,
-      },
-      {
         path: "download",
         element: <Download />,
       },
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "faculty/young-faculty-grant",
+        element: <Young />,
+      },
+      {
+        path: "industrial-event/webinar",
+        element: <Webinar />,
       },
     ],
   },

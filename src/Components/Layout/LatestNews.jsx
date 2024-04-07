@@ -10,7 +10,7 @@ const LatestNews = ({ newsItems }) => {
           {newsItems.map((item, index) => (
             <li
               key={index}
-              className="border-b-2 hover:text-gray-500 hover:font-semibold focus:text-blue-400">
+              className="border-b-2 hover:text-gray-500 hover:font-semibold">
               <NavLink to={item.url}>{item.text}</NavLink>
             </li>
           ))}

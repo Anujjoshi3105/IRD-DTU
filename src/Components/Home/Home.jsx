@@ -7,9 +7,17 @@ import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="bg-gray-50 lg:w-3/5 mx-auto p-10 rounded-xl">
+    <div className="bg-slate-50 lg:w-3/5 mx-auto p-10 rounded-xl">
       <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-        <Carousel slideInterval={5000}>
+        <Carousel slideInterval={4000}>
+          <img
+            src="https://dtutimes.dtu.ac.in/static/media/6.6a9438c5.jpeg"
+            alt="..."
+          />
+          <img
+            src="https://dtutimes.dtu.ac.in/static/media/crowd.10810342.jpg"
+            alt="..."
+          />
           <img
             src="https://media.licdn.com/dms/image/D5622AQHa-mOuoQzXdA/feedshare-shrink_800/0/1708709444584?e=2147483647&v=beta&t=VAezImY-tMkgSNzrq5F8Fl9LvRwWWepzAaks01Yg0y4"
             alt="..."
@@ -21,8 +29,8 @@ const Home = () => {
         </Carousel>
       </div>
       <div className="pb-8">
-        <h1 className="lg:text-2xl text-xl font-bold pt-10">ABOUT IRD</h1>
-        <p className="py-2">
+        <h1 className="lg:text-2xl text-xl font-bold pt-10 pb-2">ABOUT IRD</h1>
+        <p>
           In the light of changing economic scenario, government policies and
           University priorities, the University considers sponsored research and
           industrial consultancy projects as an important means for extending
@@ -38,14 +46,14 @@ const Home = () => {
           Read More...
         </NavLink>
       </div>
-      <div className="flex md:flex-row flex-col py-10 gap-2">
-        <div className="bg-gray-200 w-full p-5 rounded-lg">
+      <div className="flex md:flex-row flex-col gap-2">
+        <div className="bg-gray-100 w-full p-5 rounded-lg">
           <h1 className="text-xl font-bold py-2">NEWSLETTER</h1>
           <iframe
             src="dtu.pdf"
             className="w-full h-52 overflow-hidden"></iframe>
         </div>
-        <div className="bg-gray-200 w-full p-5 rounded-lg">
+        <div className="bg-gray-100 w-full p-5 rounded-lg">
           <h1 className="text-xl font-bold py-2">NEWSLETTER</h1>
           <iframe src="dtu.pdf" className="w-full h-52 "></iframe>
         </div>

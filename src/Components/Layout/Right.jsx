@@ -3,69 +3,72 @@ import CommonList from "./CommonList";
 import LatestNews from "./LatestNews";
 
 const Right = () => {
-  const [projectListVisible, setProjectListVisible] = useState(false);
-  const [generalListVisible, setGeneralListVisible] = useState(false);
+  const technology = [{ text: "CSR Funds", url: "/technology/csr-funds" }];
 
-  const toggleProjects = () => {
-    setProjectListVisible(!projectListVisible);
-  };
-
-  const toggleGeneral = () => {
-    setGeneralListVisible(!generalListVisible);
-  };
-
-  const projectListItems = [
-    { text: "Sponsored Research Projects", link: "#" },
-    { text: "Consultancy Jobs", link: "#" },
-    { text: "International Collaborations", link: "#" },
-    { text: "Statistics", link: "#" },
-    { text: "Significant Products & Technologies", link: "#" },
+  const sponsor = [
     {
-      text: "Significant Products & Technologies Developed at Delhi",
-      link: "#",
+      text: "Registrations/Certifications",
+      url: "sponsor/registrations-certifications",
+    },
+  ];
+  const faculty = [
+    { text: "Young Faculty Grant", url: "/faculty/young-faculty-grant" },
+    {
+      text: "Sustainable Development Project Grant",
+      url: "/faculty/sustainable-development-project",
+    },
+    {
+      text: "Equipment Matching Grant",
+      url: "/faculty/equipment-matching-grant",
+    },
+    {
+      text: "Faculty Research Project",
+      url: "/faculty/faculty-research-project",
+    },
+    {
+      text: "Multi-Institutional Faculty Research Project",
+      url: "/faculty/multi-institutional-faculty-research-project",
+    },
+  ];
+  const student = [
+    { text: "Discover & Learn", url: "/student/discover-and-learn" },
+    {
+      text: "Summer Research Internship Project",
+      url: "/student/summer-research-internship",
     },
   ];
 
-  const generalListItems = [
-    { text: "Registrations/Certifications", link: "#" },
-    { text: "Information for Vendor Registration", link: "#" },
-    { text: "Intellectual Property Rights (IPR)", link: "#" },
-    { text: "Open House", link: "#" },
-    { text: "ITRs/Annual Reports/Annual Accounts", link: "#" },
-    { text: "Concessional GST Notification", link: "#" },
-  ];
   const newItems = [
     {
       text: "Sponsored Projects - 21/02/2024",
-      url: "/sponsored-projects",
+      url: "#",
     },
-    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
-    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
-    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
-    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
-    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
-    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
-    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
-    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
-    { text: "Research Projects - 21/02/2024", url: "/research-projects" },
+    { text: "Research Projects - 21/02/2024", url: "#" },
+    {
+      text: "Sponsored Projects - 21/02/2024",
+      url: "#",
+    },
+    { text: "Research Projects - 21/02/2024", url: "#" },
+    {
+      text: "Sponsored Projects - 21/02/2024",
+      url: "#",
+    },
+    { text: "Research Projects - 21/02/2024", url: "#" },
+    {
+      text: "Sponsored Projects - 21/02/2024",
+      url: "#",
+    },
+    { text: "Research Projects - 21/02/2024", url: "#" },
   ];
   return (
-    <div className="lg:w-1/4 px-5  lg:m-0 mt-5">
+    <div className="lg:w-1/5 p-5">
       <LatestNews newsItems={newItems} />
 
-      <div className="flex lg:flex-col justify-evenly hover:overflow-auto gap-16 lg:gap-0 overflow-hidden">
-        <CommonList
-          heading="MoU/Agreement"
-          visible={projectListVisible}
-          toggleList={toggleProjects}
-          links={projectListItems}
-        />
-        <CommonList
-          heading="Circulars"
-          visible={generalListVisible}
-          toggleList={toggleGeneral}
-          links={generalListItems}
-        />
+      <div className="flex lg:flex-col justify-evenly hover:overflow-auto overflow-hidden">
+        <CommonList heading="Technology Transfer" links={technology} />
+        <CommonList heading="Sponsored Project" links={sponsor} />
+        <CommonList heading="Faculty Schemes" links={faculty} />
+        <CommonList heading="Student Schemes" links={student} />
       </div>
     </div>
   );

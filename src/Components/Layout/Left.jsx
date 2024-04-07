@@ -1,53 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import CommonList from "./CommonList";
 
 const Left = () => {
+  const Project = [
+    {
+      text: "Sponsored Research Projects",
+      url: "/sponsored-research-projects",
+    },
+    { text: "Consultancy Jobs", url: "/consultancy-jobs" },
+    { text: "Statistics", url: "/statistics" },
+    { text: "MOUs / EOI", url: "/mous-eoi" },
+    {
+      text: "Significant Products & Technologies",
+      url: "/products-technologies",
+    },
+  ];
+
+  const generalInfo = [
+    {
+      text: "Registrations/Certifications",
+      url: "/registrations-certifications",
+    },
+    {
+      text: "Information for Vendor Registration",
+      url: "/vendor-registration-info",
+    },
+    {
+      text: "Intellectual Property Rights (IPR)",
+      url: "/ipr-info",
+    },
+    { text: "Annual Reports", url: "/annual-reports" },
+  ];
+
+  const fundingAgency = [
+    {
+      text: "Government Agencies",
+      url: "/government-agencies",
+    },
+    { text: "State Agencies", url: "/state-agencies" },
+  ];
+
+  const events = [
+    { text: "Webinars", url: "industrial-event/webinar" },
+    { text: "Seminars", url: "/seminars" },
+    { text: "Workshops", url: "/workshops" },
+  ];
+
+  const incentive = [
+    {
+      text: "Research Excellence Awards",
+      url: "/research-excellence-awards",
+    },
+    { text: "Citation Awards", url: "/citation-awards" },
+    { text: "Innovation Awards", url: "/innovation-awards" },
+  ];
+
   return (
-    <div className="lg:w-1/4 xl:px-5">
-      <div className="flex lg:flex-col justify-evenly hover:overflow-auto gap-16 lg:gap-0 overflow-hidden lg:m-0 mb-5">
-        <CommonList
-          heading="Projects & Consultancies"
-          links={[
-            {
-              text: "Sponsored Research Projects",
-              url: "/sponsored-research-projects",
-            },
-            { text: "Consultancy Jobs", url: "/consultancy-jobs" },
-            {
-              text: "International Collaborations",
-              url: "/international-collaborations",
-            },
-            {
-              text: "Statistics",
-              url: "/statistics",
-            },
-          ]}
-        />
-
-        <CommonList
-          heading="General Information"
-          links={[
-            { text: "Registrations/Certifications", url: "/registrations" },
-            {
-              text: "Information for Vendor Registration",
-              url: "/vendor-registration",
-            },
-            { text: "Intellectual Property Rights (IPR)", url: "/ipr" },
-          ]}
-        />
-        <CommonList
-          heading="Funding Agencies"
-          links={[
-            { text: "Goverment Agencies", url: "/government-agencies" },
-
-            { text: "State Agencies", url: "/state-agencies" },
-          ]}
-        />
-        <CommonList
-          heading="Webinars"
-          links={[{ text: "Webinars", url: "/webinars" }]}
-        />
-      </div>
+    <div className="lg:w-1/5 flex lg:flex-col hover:overflow-auto overflow-hidden mb-5 p-5">
+      <CommonList heading="Projects & Consultancies" links={Project} />
+      <CommonList heading="General Information" links={generalInfo} />
+      <CommonList heading="Funding Agencies" links={fundingAgency} />
+      <CommonList heading="Incentives" links={incentive} />
+      <CommonList heading="Industrial Event" links={events} />
     </div>
   );
 };

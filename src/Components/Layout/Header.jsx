@@ -16,11 +16,7 @@ function Header() {
       link: "/download",
     },
     {
-      name: "NOTICE",
-      link: "/notice",
-    },
-    {
-      name: "CONTACT US",
+      name: "CONTACT",
       link: "/contact",
     },
   ];
@@ -36,13 +32,13 @@ function Header() {
   };
 
   return (
-    <header className="relative z-50">
+    <header className="sticky top-0 z-10">
       {/* HEADER TOP START */}
-      <div className="bg-blue-900 h-18 w-full flex justify-center items-center top-0 right-0 p-1">
-        <img src="logo.png" alt="" className="h-12 mx-2" />
-        <div className="m-3">
+      <div className="bg-blue-900 flex justify-center items-center ">
+        <img src="/logo.png" alt="IRD-DTU" className="h-12 mx-2" />
+        <div className="p-3 justify-between">
           <h1 className="text-xl md:text-2xl text-white font-bold -m-0.5">
-            INDUSTRIAL RESEARCH & DEVELOPMENT UNIT
+            INDUSTRIAL RESEARCH & DEVELOPMENT CENTRE
           </h1>
           <h2 className="md:text-lg  text-gray-400">
             Delhi Technological University
@@ -52,15 +48,15 @@ function Header() {
       {/* HEADER TOP END */}
 
       {/* HEADER BOTTOM START */}
-      <nav className="flex bg-black border-gray-400 text-white w-full border-b-4 justify-end px-2 md:px-10">
+      <nav className="flex bg-black border-gray-400 text-white w-full border-b-4 justify-end px-5 lg:px-10 ">
         <div
           className={`w-full md:block md:w-auto ${isOpen ? "" : "hidden"}`}
           id="navbar-default">
-          <ul className="flex flex-col items-center md:flex-row">
+          <ul className="flex flex-col md:flex-row">
             {Links.map((link, index) => (
               <li
                 key={index}
-                className={`w-full font-bold md:w-auto hover:text-black hover:bg-gray-400 px-4 py-2 ${
+                className={`font-bold hover:text-black hover:bg-gray-400 px-4 py-2 ${
                   location.pathname === link.link
                     ? "text-black bg-gray-400"
                     : ""
@@ -75,10 +71,9 @@ function Header() {
         <button
           onClick={toggleNavbar}
           type="button"
-          className="p-2 w-10 h-10 text-sm text-white md:hidden hover:text-gray-500"
+          className="p-2 w-8 h-10 text-sm text-white md:hidden hover:text-gray-500"
           aria-controls="navbar-default"
           aria-expanded={isOpen ? "true" : "false"}>
-          <span className="sr-only">Open main menu</span>
           {isOpen ? (
             <svg
               className="w-5 h-5"
