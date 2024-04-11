@@ -32,15 +32,15 @@ function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-10">
+    <header className="top-0">
       {/* HEADER TOP START */}
-      <div className="bg-blue-900 flex justify-center items-center ">
+      <div className="bg-blue-900 flex justify-center items-center flex-row mx-auto">
         <img src="/logo.png" alt="IRD-DTU" className="h-12 mx-2" />
-        <div className="p-3 justify-between">
-          <h1 className="text-xl md:text-2xl text-white font-bold -m-0.5">
+        <div className="p-4 justify-between">
+          <h1 className="text-xl sm:text-2xl md:text-3xl text-white font-bold -m-0.5">
             INDUSTRIAL RESEARCH & DEVELOPMENT CENTRE
           </h1>
-          <h2 className="md:text-lg  text-gray-400">
+          <h2 className="sm:text-lg  text-gray-400">
             Delhi Technological University
           </h2>
         </div>

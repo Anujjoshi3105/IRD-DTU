@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="bg-slate-50 lg:w-3/5 mx-auto p-10 rounded-xl">
       <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-        <Carousel slideInterval={4000}>
+        <Carousel slideInterval={8000}>
           <img
             src="https://dtutimes.dtu.ac.in/static/media/6.6a9438c5.jpeg"
             alt="..."

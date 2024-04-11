@@ -1,8 +1,50 @@
 import React from "react";
-
 import Profile from "./Profile";
 
 const About = () => {
+  const profiles = [
+    {
+      imageSrc: "https://dtu.irins.org/assets/profile_images/66951.jpg",
+      name: "Prof. Anil Kumar Sahu",
+      title: "Dean, IRD",
+      telephone: "98XXXXXXXX",
+      email: "anil@dtu.ac.in",
+      link: "https://dtu.irins.org/profile/66951",
+    },
+    {
+      imageSrc: "https://dtu.irins.org/assets/profile_images/67071.jpg",
+      name: "Prof. Roli Pawar",
+      title: "Associate Dean & Coordinator IPR",
+      telephone: "98XXXXXXXX",
+      email: "roli@dtu.ac.in",
+      link: "https://dtu.irins.org/profile/67071",
+    },
+    {
+      imageSrc: "https://dtu.irins.org/assets/profile_images/212764.jpg",
+      name: "Dr. Rajeev Kumar",
+      title: "Co-Coordinator IPR",
+      telephone: "98XXXXXXXX",
+      email: "roli@dtu.ac.in",
+      link: "https://dtu.irins.org/profile/212764",
+    },
+    {
+      imageSrc: "https://dtu.irins.org/assets/profile_images/66867.jpg",
+      name: "Prof. Sudhir G. Warker",
+      title: "NEP Coordinator",
+      telephone: "98XXXXXXXX",
+      email: "sudhir@dtu.ac.in",
+      link: "https://dtu.irins.org/profile/66867",
+    },
+    {
+      imageSrc: "https://dtu.irins.org/assets/profile_images/212764.jpg",
+      name: "Ms. Nisha Panchal",
+      title: "Co-Cordinator IPR",
+      telephone: "98XXXXXXXX",
+      email: "nisha@dtu.ac.in",
+      link: "https://dtu.irins.org/profile/212764",
+    },
+  ];
+
   return (
     <div className="bg-slate-50 lg:w-3/5 mx-auto p-10 rounded-xl">
       {/* START CONTAINER */}
@@ -56,50 +98,18 @@ const About = () => {
       </div>
       <div className="pb-8">
         <h1 className="lg:text-2xl text-xl font-bold pb-4">ADMINISTRATION</h1>
-        <Profile
-          imageSrc="https://dtu.irins.org/assets/profile_images/66951.jpg"
-          name="Prof. Anil Kumar Sahu"
-          title="Dean, IRD"
-          telephone="98XXXXXXXX"
-          email="anil@dtu.ac.in"
-          link="https://dtu.irins.org/profile/66951"
-        />
-        <Profile
-          imageSrc="https://dtu.irins.org/assets/profile_images/67071.jpg"
-          name="Dr. Roli Pawar"
-          title="Associate Dean & Coordinator IPR"
-          telephone="98XXXXXXXX"
-          email="roli@dtu.ac.in"
-          link="https://dtu.irins.org/profile/67071"
-        />
-        <Profile
-          imageSrc="https://dtu.irins.org/assets/profile_images/212764.jpg"
-          name="Dr. Rajeev Kumar"
-          title="Co-Coordinator IPR"
-          telephone="98XXXXXXXX"
-          email="roli@dtu.ac.in"
-          link="https://dtu.irins.org/profile/212764"
-        />
-
-        <Profile
-          imageSrc="https://dtu.irins.org/assets/profile_images/66867.jpg"
-          name="Prof. Sudhir G. Warker"
-          title="NEP Coordinator"
-          telephone="98XXXXXXXX"
-          email="sudhir@dtu.ac.in"
-          link="https://dtu.irins.org/profile/66867"
-        />
-
-        <Profile
-          imageSrc="https://dtu.irins.org/assets/profile_images/212764.jpg"
-          name="Ms. Nisha Panchal"
-          title="Co-Cordinator IPR"
-          telephone="98XXXXXXXX"
-          email="nisha@dtu.ac.in"
-          link="https://dtu.irins.org/profile/212764"
-        />
+        {profiles.map((profile, index) => (
+          <Profile
+            key={index}
+            imageSrc={profile.imageSrc}
+            name={profile.name}
+            title={profile.title}
+            telephone={profile.telephone}
+            email={profile.email}
+            link={profile.link}
+          />
+        ))}
       </div>
-
       {/* END CONTAINER */}
     </div>
   );

@@ -34,10 +34,10 @@ const Left = () => {
 
   const fundingAgency = [
     {
-      text: "Government Agencies",
-      url: "/government-agencies",
+      text: "Central Agencies",
+      url: "/central-agencies",
     },
-    { text: "State Agencies", url: "/state-agencies" },
+    { text: "State Agencies", url: "funding-agencies/state-agencies" },
   ];
 
   const events = [
@@ -56,7 +56,7 @@ const Left = () => {
   ];
 
   return (
-    <div className="lg:w-1/5 flex lg:flex-col hover:overflow-auto overflow-hidden mb-5 p-5">
+    <div className="lg:w-1/5 flex lg:flex-col overflow-auto  mb-5 p-5">
       <CommonList heading="Projects & Consultancies" links={Project} />
       <CommonList heading="General Information" links={generalInfo} />
       <CommonList heading="Funding Agencies" links={fundingAgency} />

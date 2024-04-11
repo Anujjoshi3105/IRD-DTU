@@ -5,6 +5,7 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Download from "./Components/Download/Download";
 import Young from "./Components/Faculty/Young";
+import State from "./Components/Funding/State";
 import Webinar from "./Components/Webinar/Webinar";
 import Layout from "./Components/Layout/Layout";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "industrial-event/webinar",
         element: <Webinar />,
+      },
+      {
+        path: "funding-agencies/state-agencies",
+        element: <State />,
       },
     ],
   },
