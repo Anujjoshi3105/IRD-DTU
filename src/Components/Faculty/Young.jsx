@@ -24,12 +24,8 @@ const Young = () => {
           measure of scientific/technical collaboration with outside agencies.
         </p>
       </div>
-      <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+      <div className="h-56 sm:h-64 2xl:h-72">
         <Carousel slideInterval={4000}>
-          <img
-            src="https://duytan.edu.vn/news/uploads/images/giangvienleanhtuanvinhdunhandanhhieunhagiaotretieubieu-2.jpg"
-            alt="..."
-          />
           <img
             src="https://dtutimes.dtu.ac.in/static/media/crowd.10810342.jpg"
             alt="..."

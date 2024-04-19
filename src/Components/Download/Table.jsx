@@ -25,7 +25,7 @@ const Table = ({ heading, items }) => {
             <summary
               className="flex justify-between items-center font-medium cursor-pointer"
               onClick={() => toggleItem(index)}>
-              <span className="hover:text-gray-400 text-gray-700">
+              <span className="hover:text-gray-500 text-gray-700">
                 {item.head}
               </span>
               <span className="transition hover:text-gray-500">
@@ -66,7 +66,7 @@ const Table = ({ heading, items }) => {
                 <a
                   href={item.link}
                   target="_blank"
-                  className="hover:text-gray-500 hover:font-semibold">
+                  className="hover:text-red-500 text-blue-500 text-sm hover:font-semibold">
                   <div className="flex mt-5 rounde-md">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

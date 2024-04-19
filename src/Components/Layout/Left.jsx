@@ -12,7 +12,7 @@ const Left = () => {
     { text: "MOUs / EOI", url: "/mous-eoi" },
     {
       text: "Significant Products & Technologies",
-      url: "/products-technologies",
+      url: "/products-techanologies",
     },
   ];
 
@@ -35,7 +35,7 @@ const Left = () => {
   const fundingAgency = [
     {
       text: "Central Agencies",
-      url: "/central-agencies",
+      url: "funding-agencies/state-agencies",
     },
     { text: "State Agencies", url: "funding-agencies/state-agencies" },
   ];
